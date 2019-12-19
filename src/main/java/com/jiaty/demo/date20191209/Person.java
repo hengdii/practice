@@ -16,7 +16,7 @@ public class Person {
 
     private Boolean flg;
 
-    private Person(String name, Integer age,Boolean flg) {
+    private Person(String name, Integer age, Boolean flg) {
         this.name = name;
         Age = age;
         this.flg = flg;
@@ -47,8 +47,8 @@ public class Person {
     }
 
 
-    public static Person newInstance(String name, Integer age,Boolean flg){
-        return new Person(name,age,flg);
+    public static Person newInstance(String name, Integer age, Boolean flg) {
+        return new Person(name, age, flg);
     }
 
 }

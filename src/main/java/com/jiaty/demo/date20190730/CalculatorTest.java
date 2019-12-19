@@ -12,7 +12,6 @@ import java.lang.reflect.Field;
 public class CalculatorTest {
 
     /**
-     *
      * 这个面试题是考反射机制。给一个object类，只知道里面有一个属性值叫name，如何取得这个属性值
      *
      * @param args

@@ -9,11 +9,11 @@ package com.jiaty.demo.date20190729;
 
 public class test1 {
 
-    public static synchronized void  demo1(){
+    public static synchronized void demo1() {
         System.out.println("静态方法");
     }
 
-    public  void demo2(){
+    public void demo2() {
         System.out.println("普通方法");
     }
 

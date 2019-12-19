@@ -10,20 +10,10 @@ package com.jiaty.demo.date20190528;
 public class Stringlength {
 
 
-
-    public static  String str = "4";
+    public static String str = "4";
 
     public static void main(String[] args) {
-    str ="201905271631585105713617217329";
-
-
-
-
-
-
-
-
-
+        str = "201905271631585105713617217329";
 
 
     }

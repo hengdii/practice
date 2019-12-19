@@ -61,7 +61,7 @@ public abstract class RetryTemplate {
             try {
                 return doBiz();
             } catch (Exception e) {
-                System.out.println("业务执行出现异常，e: {}"+ e.getMessage());
+                System.out.println("业务执行出现异常，e: {}" + e.getMessage());
                 Thread.sleep(sleepTime);
             }
         }

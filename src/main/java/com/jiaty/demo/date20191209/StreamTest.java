@@ -29,7 +29,7 @@ public class StreamTest {
 
         people.stream().filter(person -> person.getFlg().equals(false))
                 .forEach(person -> {
-                    if (person == null){
+                    if (person == null) {
                         System.out.println("null");
                     }
                     System.out.println(person.getName());

@@ -13,10 +13,9 @@ public class SplitStr {
     public static void main(String[] args) {
 
         String str = "[{23456789},{12312312},{1231231}]";
-        String [] str1 = str.split(",");
+        String[] str1 = str.split(",");
 //        System.out.println(str.substring(1,str.length()-1));
         System.out.println(str1.toString());
     }
-
 
 }

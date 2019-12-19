@@ -18,7 +18,7 @@ public class IntValueTest {
 
         Boolean flg = true;
 
-        if (cash.intValue() >0){
+        if (cash.intValue() > 0) {
             flg = false;
         }
 

@@ -14,19 +14,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Map map = new HashMap<>();
-        map.put("remark",null);
-
-
-
-
+        map.put("remark", null);
 
     }
-
-
-
-
 
 
 }

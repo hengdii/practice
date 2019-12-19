@@ -1,8 +1,5 @@
 package com.jiaty.demo.date20191202;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-
 /**
  * @program: Practice
  * @description:

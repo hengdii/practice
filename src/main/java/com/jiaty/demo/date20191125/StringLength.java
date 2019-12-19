@@ -15,7 +15,7 @@ public class StringLength {
 
         Boolean a = true;
 
-        if (pro.length()<=16){
+        if (pro.length() <= 16) {
             a = false;
         }
 

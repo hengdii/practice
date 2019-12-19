@@ -13,15 +13,10 @@ public class WriteExcel {
 
     }
 
-    public void Write(String fileName){
-
-
+    public void Write(String fileName) {
 
 
     }
-
-
-
 
 
 }

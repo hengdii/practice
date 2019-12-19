@@ -9,20 +9,18 @@ package com.jiaty.demo.date20190801;
 
 public class TestB extends TestA {
 
-    static void B(){
+    static void B() {
         System.out.println("a");
     }
 
-    public TestB(){
+    public TestB() {
         System.out.println("b");
     }
 
 
     public static void main(String[] args) {
-
         TestA a = new TestB();
         a = new TestB();
-
 
     }
 

@@ -14,16 +14,13 @@ public class BooleanTest {
 
         Boolean flg = Boolean.FALSE;
         int i = 0;
-        while (!flg && i<3){
+        while (!flg && i < 3) {
             flg = true;
             System.out.println(true);
         }
 
 
     }
-
-
-
 
 
 }

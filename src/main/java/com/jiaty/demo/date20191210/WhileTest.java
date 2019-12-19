@@ -9,23 +9,21 @@ package com.jiaty.demo.date20191210;
 
 public class WhileTest {
 
-    private static Boolean convert(Boolean flg){
+    private static Boolean convert(Boolean flg) {
 
         return true;
     }
 
 
-
     public static void main(String[] args) throws InterruptedException {
-        int i= 1;
+        int i = 1;
         Boolean flg = true;
 
-        while(flg){
+        while (flg) {
             flg = convert(flg);
             System.out.println(i++);
             Thread.sleep(200000);
         }
-
 
 
     }

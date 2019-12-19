@@ -1,7 +1,8 @@
 package com.jiaty.demo.date20191105;
 
 import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @program: Practice
@@ -20,18 +21,18 @@ public class Main {
         SkuItem skuItem4 = new SkuItem();
         SkuItem skuItem5 = new SkuItem();
         skuItem1.setQuentity(1);
-        skuItem1.setUnitPirce(new BigDecimal(6.9+""));
+        skuItem1.setUnitPirce(new BigDecimal(6.9 + ""));
         skuItem2.setQuentity(2);
-        skuItem2.setUnitPirce(new BigDecimal(3.9+""));
+        skuItem2.setUnitPirce(new BigDecimal(3.9 + ""));
         skuItem3.setQuentity(1);
-        skuItem3.setUnitPirce(new BigDecimal(6.7+""));
+        skuItem3.setUnitPirce(new BigDecimal(6.7 + ""));
         skuItems.add(skuItem1);
         skuItems.add(skuItem2);
         skuItems.add(skuItem3);
         skuItem4.setQuentity(4);
-        skuItem4.setUnitPirce(new BigDecimal(0.3+""));
+        skuItem4.setUnitPirce(new BigDecimal(0.3 + ""));
         skuItem5.setQuentity(4);
-        skuItem5.setUnitPirce(new BigDecimal(2+""));
+        skuItem5.setUnitPirce(new BigDecimal(2 + ""));
         skuItems.add(skuItem4);
         skuItems.add(skuItem5);
 

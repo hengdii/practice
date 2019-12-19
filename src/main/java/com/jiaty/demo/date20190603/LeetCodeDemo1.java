@@ -1,8 +1,5 @@
 package com.jiaty.demo.date20190603;
 
-import java.lang.reflect.Array;
-import java.util.*;
-
 /**
  * @program: Practice
  * @description: 寻找两个有序数组的中位数
@@ -14,7 +11,7 @@ public class LeetCodeDemo1 {
 
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-            return 0;
+        return 0;
     }
 
     public static void main(String[] args) {

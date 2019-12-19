@@ -20,12 +20,12 @@ public class EnumDemo {
 
     public static final int GREEN = 0x2;
 
-    public static final int BLUE  = 0x3;
+    public static final int BLUE = 0x3;
 
     public int color;
 
     @Test
-    public void test1(){
+    public void test1() {
 
         color = RED;
         color = 4;
@@ -36,7 +36,7 @@ public class EnumDemo {
     public Color colorEnum2;
 
     @Test
-    public void test2(){
+    public void test2() {
 
 //        colorEnum = Color.BLUE;
 //        colorEnum = Color.GREEN;
@@ -55,29 +55,28 @@ public class EnumDemo {
 
 
     @Test
-    public void test3(){
+    public void test3() {
 
         EnumSet<Color> eset = EnumSet.allOf(Color.class);
-        for(Color c: eset){
+        for (Color c : eset) {
             System.out.println(c);
         }
 
-        EnumMap<Color,String> emap = new EnumMap(Color.class);
-        emap.put(Color.GREEN,"green");
-        emap.put(Color.RED,"red");
-        emap.put(Color.BLUE,"blue");
+        EnumMap<Color, String> emap = new EnumMap(Color.class);
+        emap.put(Color.GREEN, "green");
+        emap.put(Color.RED, "red");
+        emap.put(Color.BLUE, "blue");
         System.out.println(emap.toString());
     }
 
     @Test
-    public void test4(){
+    public void test4() {
 
         System.out.println(Color.RED);
         //由此可见，调用枚举类中一个元素，就会加载整个枚举类，最后输出属性值
 
 
     }
-
 
 
 }

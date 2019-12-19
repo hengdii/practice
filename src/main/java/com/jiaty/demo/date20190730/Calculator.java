@@ -11,7 +11,7 @@ public class Calculator {
 
     public String name;
 
-    public Calculator(){
+    public Calculator() {
 
     }
 

@@ -3,7 +3,6 @@ package com.jiaty.demo.date20191212;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * @program: Practice
@@ -17,7 +16,7 @@ public class ForEachAddTest {
 
     public static void main(String[] args) {
 
-        BigDecimal total =BigDecimal.ZERO;
+        BigDecimal total = BigDecimal.ZERO;
         List<String> ids = new ArrayList<>();
         ids.add("12312");
         ids.add("12312");

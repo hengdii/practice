@@ -14,10 +14,10 @@ import java.util.stream.Collectors;
 public class lambdaTest {
 
 
-    public static List<Person> PersonLists(){
+    public static List<Person> PersonLists() {
         List<Person> people = new ArrayList<>();
-        for (int i=0;i<8;i++){
-            Person p  = new Person( i+"儿子",8-i);
+        for (int i = 0; i < 8; i++) {
+            Person p = new Person(i + "儿子", 8 - i);
             people.add(p);
         }
         return people;
@@ -25,20 +25,14 @@ public class lambdaTest {
 
     public static void main(String[] args) {
 
-        Boolean b= true;
+        Boolean b = true;
         Boolean aBoolean = Boolean.valueOf(false);
 
         List<Person> persons = PersonLists();
         persons.stream().filter(person -> person.equals("1")).collect(Collectors.toList());
 
 
-
-
-
-
-
     }
-
 
 
 }

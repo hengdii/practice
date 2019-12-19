@@ -9,11 +9,11 @@ package com.jiaty.demo.date20190801;
 
 public class TestA {
 
-    static void A(){
+    static void A() {
         System.out.println("1");
     }
 
-    public TestA(){
+    public TestA() {
         System.out.println("2");
     }
 

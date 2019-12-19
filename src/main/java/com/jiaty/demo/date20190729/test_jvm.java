@@ -35,7 +35,7 @@ public class test_jvm {
             final MemoryUsage usage = pool.getUsage();
             System.out.println("kind is " + kind + ", pool name is " + pool.getName() + ", jvm." + pool.getName() + ".init is " + usage.getInit());
             System.out.println("kind is " + kind + ", pool name is " + pool.getName() + ", jvm." + pool.getName() + ".used is " + usage.getUsed());
-            System.out.println("kind is " + kind + ", pool name is " + pool.getName() + ", jvm." + pool.getName()+ ".committed is " + usage.getCommitted());
+            System.out.println("kind is " + kind + ", pool name is " + pool.getName() + ", jvm." + pool.getName() + ".committed is " + usage.getCommitted());
             System.out.println("kind is " + kind + ", pool name is " + pool.getName() + ", jvm." + pool.getName() + ".max is " + usage.getMax());
         }
 

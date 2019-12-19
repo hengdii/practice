@@ -14,7 +14,7 @@ public class SetScaleDemo {
     public static void main(String[] args) {
 
         BigDecimal bigDecimal = new BigDecimal(123.053213);
-        System.out.println(bigDecimal.setScale(2,BigDecimal.ROUND_HALF_UP));
+        System.out.println(bigDecimal.setScale(2, BigDecimal.ROUND_HALF_UP));
     }
 
 }

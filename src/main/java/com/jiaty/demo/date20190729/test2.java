@@ -10,18 +10,17 @@ package com.jiaty.demo.date20190729;
 public class test2 {
 
 
-
     public static void main(String[] args) {
         test1 t1 = new test1();
 
-        Thread  thread1 = new Thread(){
-           public void run(){
-                   test1.demo1();
-                   t1.demo2();
-           }
+        Thread thread1 = new Thread() {
+            public void run() {
+                test1.demo1();
+                t1.demo2();
+            }
         };
-        Thread  thread2 = new Thread(){
-            public void run(){
+        Thread thread2 = new Thread() {
+            public void run() {
                 test1.demo1();
                 t1.demo2();
             }

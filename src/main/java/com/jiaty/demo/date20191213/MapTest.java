@@ -1,13 +1,8 @@
 package com.jiaty.demo.date20191213;
 
-import com.oracle.javafx.jmx.json.JSONReader;
-
-import java.util.List;
-import java.util.Map;
-
 /**
  * @program: Practice
- * @description:   java.util.LinkedHashMap cannot be cast to com.jhd.fcs.model.XXX
+ * @description: java.util.LinkedHashMap cannot be cast to com.jhd.fcs.model.XXX
  * @author: jiaty
  * @create: 2019-12-13 16:24
  **/

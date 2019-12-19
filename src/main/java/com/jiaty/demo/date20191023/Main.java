@@ -26,9 +26,9 @@ public class Main {
         items1.setUnitPrice(BigDecimal.valueOf(100));
 
         reduceItems.add(items1);
-        reduceItems.forEach(l->{
+        reduceItems.forEach(l -> {
             String s = l.toString();
-            System.out.println(s+"---------------------");
+            System.out.println(s + "---------------------");
         });
 
 
@@ -39,16 +39,16 @@ public class Main {
         });
         System.out.println(reduceItems.size());
 
-        BillingOrderItems items = reduceItems.get(reduceItems.size()-1);
-        reduceItems.remove(reduceItems.size()-1);
+        BillingOrderItems items = reduceItems.get(reduceItems.size() - 1);
+        reduceItems.remove(reduceItems.size() - 1);
         BigDecimal jia = BigDecimal.ZERO;
 
-        System.out.println(items+"最后一位");
-        reduceItems.forEach(l->{
+        System.out.println(items + "最后一位");
+        reduceItems.forEach(l -> {
             String s = l.toString();
-            System.out.println(s+"last");
+            System.out.println(s + "last");
         });
-        for (BillingOrderItems item:reduceItems){
+        for (BillingOrderItems item : reduceItems) {
             jia = jia.add(BigDecimal.TEN);
         }
         System.out.println(jia);

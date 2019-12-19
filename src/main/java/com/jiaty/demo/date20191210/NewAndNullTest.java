@@ -19,9 +19,7 @@ public class NewAndNullTest {
         System.out.println(p == null);
 
 
-
     }
-
 
 
 }

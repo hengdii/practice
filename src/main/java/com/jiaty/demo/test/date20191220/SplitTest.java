@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 /**
  * @program: practice
- * @description: 测试stream和split ,以及转义字符
+ * @description: 测试stream和split ,以及转义字符  . |
  * @author: jiaty
  * @create: 2019-12-20 14:33
  **/

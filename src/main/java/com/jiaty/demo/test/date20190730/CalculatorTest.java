@@ -23,7 +23,6 @@ public class CalculatorTest {
 
         Class calculatorClass = calculator.getClass();
 
-
         Field[] fields = calculatorClass.getFields();
 //        System.out.println(calculatorClass.getClassLoader());
         for (Field field : fields) {

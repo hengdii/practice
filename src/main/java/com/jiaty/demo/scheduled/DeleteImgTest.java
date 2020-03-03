@@ -19,6 +19,11 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class DeleteImgTest implements ApplicationRunner {
 
+    /**
+     *
+     *  实现ApplicationRunner，可以实现在项目启动时就执行任务～
+     *
+     */
 
 //    @Resource
 //    ScheduledExecutorService scheduledExecutorService;

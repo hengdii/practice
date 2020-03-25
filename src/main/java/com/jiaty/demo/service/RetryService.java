@@ -1,5 +1,6 @@
 package com.jiaty.demo.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.retry.annotation.Backoff;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
  **/
 
 @Service
+@Slf4j
 public class RetryService {
     /**
      * Spring boot使用spring retry重试机制
@@ -55,6 +57,11 @@ public class RetryService {
     @Recover
     public void recover() {
         logger.error("被除数不能为0");
+    }
+
+
+    public void  TestMain(){
+        log.info("1231231234123213");
     }
 
 }

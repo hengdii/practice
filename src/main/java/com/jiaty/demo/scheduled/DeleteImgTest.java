@@ -1,5 +1,6 @@
 package com.jiaty.demo.scheduled;
 
+import com.jiaty.demo.service.RetryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.ApplicationArguments;
@@ -28,11 +29,15 @@ public class DeleteImgTest implements ApplicationRunner {
 //    @Resource
 //    ScheduledExecutorService scheduledExecutorService;
 
+    @Autowired
+    private RetryService retryService;
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println(args);
         System.out.println("这个是测试ApplicationRunner接口");
         startDeleteImgService();
+        retryService.TestMain();
     }
 
     //定时器

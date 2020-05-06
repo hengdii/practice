@@ -69,7 +69,7 @@ public class ObjToList {
         Map<String, Object> list = getList();
         Object key = list.get("key");
         List<Student> students = castList(key,Student.class);
-        List<Student> collect = students.stream().filter(student -> student.isSex()).collect(Collectors.toList());
+        List<Student> collect = students.stream().filter(Student::isSex).collect(Collectors.toList());
         System.out.println(collect.size());
 //        for (Student student : students) {
 //            s.add(student.getName());

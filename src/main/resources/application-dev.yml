@@ -1,6 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/practice?&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
-    username: root
-    password: 1q2w3e4r
-    driverClassName: com.mysql.jdbc.Driver

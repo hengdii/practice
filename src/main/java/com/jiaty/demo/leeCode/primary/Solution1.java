@@ -31,16 +31,16 @@ public class Solution1 {
 
 
     public static int reverse(int x) {
-        int i_ = 0;
+        int i = 0;
         int y = 0;
         if (x < 0){
-            i_ = 1;
+            i = 1;
             x = -x;
         }
 
 
 
-        if(i_ == 1){
+        if(i == 1){
             y = -x;
         }
         return y;

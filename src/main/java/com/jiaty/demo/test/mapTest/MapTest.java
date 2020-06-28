@@ -3,6 +3,7 @@ package com.jiaty.demo.test.mapTest;
 import com.alibaba.fastjson.JSON;
 import com.jiaty.demo.test.testModel.Person;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,6 +42,16 @@ public class MapTest {
 
         System.out.println(JSON.toJSONString(personMap));
 
+
+        Map<Integer, BigDecimal> map1 = new HashMap<>();
+        map1.put(1,BigDecimal.TEN);
+
+        BigDecimal bigDecimal = map1.get(2);
+        if (bigDecimal == null){
+            bigDecimal = BigDecimal.ZERO;
+        }
+        map1.put(2,bigDecimal);
+        System.out.println(map1);
     }
 
 

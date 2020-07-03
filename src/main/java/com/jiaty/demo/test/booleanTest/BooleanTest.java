@@ -12,7 +12,7 @@ public class BooleanTest {
     public static void main(String[] args) {
 
 
-        Boolean flg = Boolean.FALSE;
+        boolean flg = Boolean.FALSE;
         int i = 0;
         while (!flg && i < 3) {
             flg = true;

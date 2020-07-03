@@ -24,6 +24,13 @@ public class BigDecimalDemo {
         }
 
 
+
+        BigDecimal TEN = BigDecimal.TEN;
+
+        System.out.println(BigDecimal.ZERO.compareTo(TEN));
+
+
+        System.out.println(TEN.movePointLeft(2));
     }
 
 

@@ -1,6 +1,7 @@
 package com.jiaty.demo.test.stringTest;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @program: Practice
@@ -18,6 +19,12 @@ public class SplitStr {
         String[] str1 = str.split(",");
 //        System.out.println(str.substring(1,str.length()-1));
         System.out.println(Arrays.toString(str1));
+
+
+
+        String str2 = "410923000000";
+        List<String> strings = Arrays.asList(str2.split(","));
+        System.out.println(strings);
     }
 
 }

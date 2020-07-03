@@ -13,6 +13,9 @@ public class StringBuilderTest {
 
     public static void main(String[] args) {
 
+        /**
+         * JSON.toJSONBytes 这个返回值是bytes的数组 bytes[]
+         */
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(JSON.toJSONBytes("错误悉尼"));
         System.out.println(stringBuilder.toString());

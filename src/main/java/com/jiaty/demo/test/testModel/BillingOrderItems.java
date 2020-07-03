@@ -1,5 +1,6 @@
 package com.jiaty.demo.test.testModel;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
@@ -10,7 +11,7 @@ import java.math.BigDecimal;
  **/
 
 
-public class BillingOrderItems {
+public class BillingOrderItems implements Serializable {
 
     /**
      * skuId

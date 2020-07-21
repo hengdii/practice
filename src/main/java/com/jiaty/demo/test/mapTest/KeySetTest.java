@@ -18,7 +18,7 @@ public class KeySetTest {
         map.put(11,"1");
         map.put(22,"2");
         map.put(33,"3");
-        map.keySet().stream().forEach( sku-> System.out.println(sku));
+        map.keySet().forEach(System.out::println);
 
 
 

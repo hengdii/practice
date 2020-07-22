@@ -12,7 +12,7 @@ import java.util.Map;
  * @create: 2020-01-06 11:57
  **/
 @Slf4j
-public class Solution1 {
+public class Solution3 {
     /**
      * 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。(字符中不含有重复的字符)
      * <p>

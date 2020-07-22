@@ -29,5 +29,10 @@ public class IntValueTest {
 
         System.out.println(cash.intValue());
 
+//        System.out.println(1/2);
+//        System.out.println(2/2);
+//        System.out.println(3/2);
+//        System.out.println(4/2);
+
     }
 }

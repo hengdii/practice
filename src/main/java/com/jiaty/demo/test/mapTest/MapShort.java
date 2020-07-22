@@ -1,7 +1,8 @@
 package com.jiaty.demo.test.mapTest;
 
-import com.google.common.collect.Maps;
+//import com.google.common.collect.Maps;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -17,7 +18,8 @@ public class MapShort {
 
         Short s = 6;
 
-        Map map = Maps.newHashMap();
+//        Map map = Maps.newHashMap();
+        Map map = new HashMap();
         map.put("s",s);
 
         if ("6".equals(map.get("s").toString())){

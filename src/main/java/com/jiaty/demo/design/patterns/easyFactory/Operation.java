@@ -19,8 +19,7 @@ public class Operation {
     private double numberB = 0;
 
     public double getResult() {
-        double result = 0;
-        return result;
+        return 0;
     }
 
 

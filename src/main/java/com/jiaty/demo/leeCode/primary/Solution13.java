@@ -70,18 +70,21 @@ public class Solution13 {
 
 
     public static int romanToInt(String s) {
-        char[] chars = s.toCharArray();
+        //记住，不要用toCharArray，因为占用空间成了一个新的char数组
+//        char[] chars = s.toCharArray();
+        //直接用string.charAt
         int number = 0;
-        for (int i = 1; i < chars.length; i++) {
-            int latter = (int) romanNumber.get(chars[chars.length - i]);
-            int previous = (int) romanNumber.get(chars[chars.length - i - 1]);
+        int length = s.length();
+        for (int i = 1; i < s.length(); i++) {
+            int latter = (int) romanNumber.get(s.charAt(length - i));
+            int previous = (int) romanNumber.get(s.charAt(length - i - 1));
             if (latter <= previous) {
                 number = number + latter;
             } else {
                 number = number + latter - previous - previous;
             }
         }
-        number = number + (int) romanNumber.get(chars[0]);
+        number = number + (int) romanNumber.get(s.charAt(0));
         return number;
     }
 

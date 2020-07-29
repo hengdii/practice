@@ -1,4 +1,4 @@
-package com.jiaty.demo.leeCode.intermediate;
+package com.jiaty.demo.leecode.intermediate;
 
 /**
  * @program: Practice

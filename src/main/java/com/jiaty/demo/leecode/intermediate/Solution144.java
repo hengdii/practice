@@ -1,6 +1,4 @@
-package com.jiaty.demo.leeCode.intermediate;
-
-import org.checkerframework.checker.units.qual.A;
+package com.jiaty.demo.leecode.intermediate;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -19,11 +19,9 @@ public class Solution28 {
         for (int i = 0; i < haystack.length(); i++) {
 
 
-
-
         }
 
-
+        return 0;
 
     }
 

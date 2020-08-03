@@ -31,17 +31,12 @@ public class Solution0803 {
         if (nums == null || nums.length == 0) {
             return -1;
         }
-        Integer key = null;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == i) {
-                key = i;
-                break;
+                return i;
             }
         }
-        if (key == null) {
-            return -1;
-        }
-        return key;
+       return -1;
     }
 
     public static void main(String[] args) {

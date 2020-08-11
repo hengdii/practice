@@ -8,6 +8,7 @@ package com.jiaty.demo.leecode.primary;
  **/
 
 public class Solution69 {
+
     /**
      * 实现 int sqrt(int x) 函数。
      * <p>

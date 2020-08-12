@@ -56,7 +56,7 @@ public class Solution144 {
     }
 
 
-    private class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

@@ -67,8 +67,20 @@ public class Solution459 {
 
     public static void main(String[] args) {
         String s = "abcabcabcabcd";
-        System.out.println(repeatedSubstringPattern(s));
+//        System.out.println(repeatedSubstringPattern(s));
+        System.out.println(repeatedSubstringPattern1(s));
+    }
 
+
+    /**
+     * 官方解法
+     *
+     * 从位置 1 开始查询，并希望查询结果不为位置 n，这与移除字符串的第一个和最后一个字符是等价的
+     */
+
+    public static boolean repeatedSubstringPattern1(String s) {
+        int index = (s + s).indexOf(s, 1);
+        return index != s.length();
     }
 
 }

@@ -10,16 +10,19 @@ package com.jiaty.demo.leecode.primary;
 public class Solution144 {
 
     public static boolean hasCycle(ListNode head) {
+        if (head == null || head.next == null) {
+            return false;
+        }
         ListNode slow = head;
-        ListNode fast = head;
-        while (slow.next != null && fast.next.next != null) {
+        ListNode fast = head.next;
+        while (slow != fast) {
+            if (fast == null || fast.next == null) {
+                return false;
+            }
             slow = slow.next;
             fast = fast.next.next;
-            if (fast == slow) {
-                return true;
-            }
         }
-        return false;
+        return true;
     }
 
     static class ListNode {

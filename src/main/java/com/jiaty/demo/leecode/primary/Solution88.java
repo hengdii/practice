@@ -1,5 +1,7 @@
 package com.jiaty.demo.leecode.primary;
 
+import java.util.Arrays;
+
 /**
  * @program: Practice
  * @description: 合并两个有序数组
@@ -66,6 +68,7 @@ public class Solution88 {
 
     /**
      * 强行排序
+     *
      * @param nums1
      * @param m
      * @param nums2
@@ -113,6 +116,7 @@ public class Solution88 {
 
     /**
      * 新创建出一个数组，双指针
+     *
      * @param nums1
      * @param m
      * @param nums2
@@ -146,5 +150,22 @@ public class Solution88 {
         }
         System.arraycopy(nums, 0, nums1, 0, m + n);
     }
+
+
+    /**
+     * 第二遍做题，投机取巧思路
+     *
+     * @param nums1
+     * @param m
+     * @param nums2
+     * @param n
+     */
+    public static void merge3(int[] nums1, int m, int[] nums2, int n) {
+        for (int i = m, j = 0; j < n; j++) {
+            nums1[i++] = nums2[j];
+        }
+        Arrays.sort(nums1);
+    }
+
 
 }

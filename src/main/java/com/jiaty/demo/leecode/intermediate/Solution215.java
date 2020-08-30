@@ -45,7 +45,7 @@ public class Solution215 {
         for (int val : nums) {
             queue.add(val);
             if (queue.size() > k) {    //维护堆的大小一直为K，
-                queue.poll();
+                queue.poll();       //检索并删除头部，同时
             }
         }
         return queue.peek();

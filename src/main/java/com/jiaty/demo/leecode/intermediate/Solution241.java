@@ -17,7 +17,7 @@ public class Solution241 {
      * @param input
      * @return
      */
-    public List<Integer> diffWaysToCompute(String input) {
+    public static List<Integer> diffWaysToCompute(String input) {
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
@@ -47,6 +47,11 @@ public class Solution241 {
             list.add(Integer.valueOf(input));
         }
         return list;
+    }
+
+    public static void main(String[] args) {
+        String input = "2*3-4*5";
+        diffWaysToCompute(input).forEach(System.out::println);
     }
 
 }

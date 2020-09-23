@@ -37,14 +37,18 @@ public class Solution19 {
         ListNode(int x) {
             val = x;
         }
-    }
 
+        @Override
+        public String toString() {
+            return val + "->" + next == null ? "null" : next.toString();
+        }
+    }
 
     /**
      * 大佬解法： 一次遍历
      */
 
-    public ListNode removeNthFromEnd1(ListNode head, int n) {
+    public static ListNode removeNthFromEnd1(ListNode head, int n) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode first = dummy;
@@ -61,4 +65,9 @@ public class Solution19 {
         second.next = second.next.next;
         return dummy.next;
     }
+//
+//    public static void main(String[] args) {
+//
+//
+//    }
 }

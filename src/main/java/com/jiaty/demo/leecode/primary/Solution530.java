@@ -19,7 +19,6 @@ public class Solution530 {
      * 3.任意结点的左、右子树也分别为二叉搜索树。
      */
 
-
     private static int ans;
     private static int pre;
 

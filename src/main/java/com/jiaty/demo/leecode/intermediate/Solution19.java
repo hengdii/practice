@@ -70,4 +70,15 @@ public class Solution19 {
 //
 //
 //    }
+
+
+
+
+    public static ListNode removeNthFromEnd2(ListNode head, int n) {
+        if (head == null){
+            return null;
+        }
+        return head;
+    }
+
 }

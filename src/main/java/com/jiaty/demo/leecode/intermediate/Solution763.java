@@ -80,7 +80,7 @@ public class Solution763 {
     public static void main(String[] args) {
         String s = "ababcbacadefegdehijhklij";
 //        System.out.println(s.lastIndexOf('a'));
-        List<Integer> list = partitionLabels(s);
+        List<Integer> list = partitionLabels3(s);
 //        List<Integer> list = partitionLabels1(s);
         for (Integer i : list) {
             System.out.println(i);
@@ -119,4 +119,33 @@ public class Solution763 {
     private static int char2Index(char c) {
         return c - 'a';
     }
+
+
+    /**
+     * 费劲的递归
+     */
+    public static List<Integer> partitionLabels3(String S) {
+        List<Integer> integers = new ArrayList<>();
+        if (S == null) {
+            return integers;
+        }
+        getPartition(S, integers);
+        return integers;
+    }
+
+
+    public static void getPartition(String s, List<Integer> integers) {
+        if (s == null || s.length() == 0) {
+            return;
+        }
+        int index = s.lastIndexOf(s.charAt(0));
+        for (int i = 1; i <= index; i++) {
+            index = Math.max(index, s.lastIndexOf(s.charAt(i)));
+        }
+        integers.add(index + 1);
+        getPartition(s.substring(index + 1), integers);
+
+
+    }
+
 }

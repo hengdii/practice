@@ -141,7 +141,6 @@ public class Solution144 {
         treeNode.right.left = new TreeNode(5);
         treeNode.right.right = new TreeNode(6);
 
-
         System.out.println(preorderTraversal3(treeNode));
 
 

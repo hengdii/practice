@@ -118,23 +118,29 @@ public class Solution649 {
             for(int i = 0;i < chars.length;i++){
                 char cur = chars[i];
                 if(cur == 'R'){
-                    if(flag)
+                    if(flag) {
                         Rnumber++;
+                    }
                     if(curBanR == 0){
                         curBanD++;
                         totalBanD++;
-                        if(totalBanD == Dnumber  && !flag)return "Radiant";
+                        if(totalBanD == Dnumber  && !flag) {
+                            return "Radiant";
+                        }
                     }else{
                         curBanR--;
                         chars[i] = 'r';
                     }
                 }else if(cur == 'D'){
-                    if(flag)
+                    if(flag) {
                         Dnumber++;
+                    }
                     if(curBanD == 0){
                         curBanR++;
                         totalBanR++;
-                        if(totalBanR == Rnumber  && !flag)return "Dire";
+                        if(totalBanR == Rnumber  && !flag) {
+                            return "Dire";
+                        }
                     }else{
                         curBanD--;
                         chars[i] = 'd';
@@ -142,8 +148,12 @@ public class Solution649 {
                 }
             }
             flag = false;
-            if(totalBanD >= Dnumber)return "Radiant";
-            if(totalBanR >= Rnumber)return "Dire";
+            if(totalBanD >= Dnumber) {
+                return "Radiant";
+            }
+            if(totalBanR >= Rnumber) {
+                return "Dire";
+            }
         }
     }
 }

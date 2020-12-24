@@ -42,7 +42,6 @@ public class Solution135 {
         return ret;
     }
 
-
     public int candy1(int[] ratings) {
         int n = ratings.length;
         int ret = 1;
@@ -50,7 +49,7 @@ public class Solution135 {
         for (int i = 1; i < n; i++) {
             if (ratings[i] >= ratings[i - 1]) {
                 dec = 0;
-                pre = ratings[i] ==  ratings[i - 1] ? 1 : pre + 1;
+                pre = ratings[i] == ratings[i - 1] ? 1 : pre + 1;
                 ret += pre;
                 inc = pre;
             } else {

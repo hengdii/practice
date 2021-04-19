@@ -91,6 +91,13 @@ public class ThreadDemo {
         System.out.println(service.isTerminated());
 
 
+
+        new Thread(()->{
+
+        }).run();
+
+
+
     }
 
 

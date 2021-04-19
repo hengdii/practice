@@ -39,9 +39,6 @@ public class BubbleSort {
     public static void main(String[] args) {
         int [] nums = new int[]{4,5,6,3,2,1};
         System.out.println(Arrays.toString(bubbleSort(nums, nums.length)));
-
-
-
     }
 
 
